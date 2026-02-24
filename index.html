@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Tracker</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Job Application Tracker</h1>
+
+        <div class="stats-container">
+            <div class="stat-card">
+                <span class="stat-title">Total</span>
+                <span class="stat-count count-total" id="total-count">0</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-title">Interview</span>
+                <span class="stat-count count-interview" id="interview-count">0</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-title">Rejected</span>
+                <span class="stat-count count-rejected" id="rejected-count">0</span>
+            </div>
+        </div>
+
+        <div class="main-section">
+            <div class="section-header">
+                <span class="section-title">Available Jobs</span>
+                <span class="jobs-count-text" id="tab-jobs-count">0 jobs</span>
+            </div>
+
+            <div class="tabs">
+                <button class="tab-btn active" id="tab-all" onclick="changeTab('all')">All</button>
+                <button class="tab-btn" id="tab-interview" onclick="changeTab('interview')">Interview</button>
+                <button class="tab-btn" id="tab-rejected" onclick="changeTab('rejected')">Rejected</button>
+            </div>
+
+            <div class="job-list" id="job-list"></div>
+
+            <div class="empty-state" id="empty-state">
+                <img src="picture/jobs.png" alt="No jobs available" class="empty-img">
+                <h3 class="empty-title">No jobs available</h3>
+                <p class="empty-subtitle">Check back soon for new job opportunities</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
