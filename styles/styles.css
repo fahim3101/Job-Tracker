@@ -159,7 +159,7 @@ h1 {
 .empty-title { font-size: 20px; color: #0b2746; margin-bottom: 10px; }
 .empty-subtitle { color: #6b7280; }
 
-/* === 576px Mobile Responsive Design === */
+/* Mobile Responsive */
 @media (max-width: 576px) {
     body {
         padding: 15px 10px;
